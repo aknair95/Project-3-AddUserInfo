@@ -14,10 +14,10 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <AddUserForm userInfoObj={userInfoObjHandler}/>
       <UserInfoList usersInfo={usersList}/>
-    </div>
+    </>
   );
 }
 
