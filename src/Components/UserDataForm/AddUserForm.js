@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./AddUserForm.css";
 import Card from "../UI/card";
 import ErrorModal from "../UI/ErrorModal";
+import Wrapper from "../UI/wrapper";
 
 const AddUserForm=(props) =>{
  
@@ -44,7 +45,7 @@ const AddUserForm=(props) =>{
         setInvalid(null);
     }
         return(
-            <div>
+            <Wrapper>
                 {invalid && <ErrorModal title={invalid.title} message={invalid.message} onConfirm={onInvalidHandler}/> }      
                 <Card classname="form-control">
                     <form onSubmit={OnSubmitHandler}>
@@ -55,7 +56,7 @@ const AddUserForm=(props) =>{
                         <button type="submit">ADD USER</button>
                     </form>
                 </Card>
-            </div>   
+            </Wrapper>   
     )
 }
 
