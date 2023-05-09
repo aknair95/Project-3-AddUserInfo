@@ -3,7 +3,7 @@ import "./ErrorModal.css";
 
 const ErrorModal = (props) => {
   return (
-    <div>
+    <React.Fragment>
       <div className="backdrop" onClick={props.onConfirm}/>
       <Card classname="modal">
         <header className="header">
@@ -16,7 +16,7 @@ const ErrorModal = (props) => {
           <button type="button" onClick={props.onConfirm}>Okay</button>
         </footer>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 
