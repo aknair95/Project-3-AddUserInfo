@@ -9,7 +9,7 @@ function App() {
 
   const userInfoObjHandler=(name,age) =>{
     setUsersList((prevUsersList) =>{
-      return [ ...prevUsersList,{userName:name,userAge:age,key:Math.random()}];
+      return [ ...prevUsersList,{userName:name,userAge:age,id:Math.random()}];
     });
   }
 
