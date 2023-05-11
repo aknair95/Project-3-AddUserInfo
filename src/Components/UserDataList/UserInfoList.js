@@ -9,7 +9,7 @@ const UserInfoList=(props) =>{
                 {  
                  props.usersInfo.map((element) =>(
                  <li key={element.id}>
-                  { `Name- ${element.userName} Age- ${element.userAge}`}
+                  { `Name- ${element.userName} Age- ${element.userAge} College- ${element.userCollege}`}
                  </li>
                 ))}
             </ul> 
